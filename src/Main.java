@@ -10,6 +10,20 @@ public class Main {
         Accessory collar = new Accessory("Нашийник", "Шкіряний", 1150.0);
         Accessory bed = new Accessory("Ліжко", "М'яке", 1000.0);
 
+        Animal fish = new Animal("Kysa");
+        try{
+            fish.addAnimal("");
+        }
+        catch(IncorrectInfAnimalException ee){
+            System.err.println(ee.getMessage());
+        }
+        Accessory c=new Accessory("Повідок", "Шкіряний", 1250.0);
+        try {
+            c.checkStock(0);
+        } catch (OutOfStockException p) {
+            System.err.println(p.getMess());
+        }
+
         // Додаємо товари до магазину
         store.addProduct(dog);
         store.addProduct(cat);

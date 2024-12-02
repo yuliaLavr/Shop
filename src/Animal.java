@@ -7,6 +7,17 @@ public class Animal extends Product implements Sale {
         this.age = age;
         this.price = price;
     }
+
+    public Animal(String fish) {
+        super(fish);
+    }
+
+    public void addAnimal(String name) throws IncorrectInfAnimalException{
+        if (name == null || name.isEmpty()) {
+            throw new IncorrectInfAnimalException();
+        }
+        this.name=name;
+    }
     public int getAge(){
         return age;
     }
