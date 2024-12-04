@@ -2,8 +2,8 @@ public class Accessory extends Product implements Sale{
     private String type;
     private double price;
 
-    public Accessory(java.lang.String name, java.lang.String type, double price) {
-        super(name);
+    public Accessory(String name, String type, double price, int quantity) {
+        super(name,quantity);
         this.type = type;
         this.price = price;
     }

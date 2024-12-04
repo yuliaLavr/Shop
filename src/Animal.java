@@ -2,14 +2,10 @@ public class Animal extends Product implements Sale {
     private int age;
     private double price;
 
-    public Animal(String name, int age, double price) {
-        super(name);
+    public Animal(String name, int age, double price, int quantity) {
+        super(name,quantity);
         this.age = age;
         this.price = price;
-    }
-
-    public Animal(String fish) {
-        super(fish);
     }
 
     public void addAnimal(String name) throws IncorrectInfAnimalException{

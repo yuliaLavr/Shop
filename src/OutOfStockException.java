@@ -1,6 +1,6 @@
 public class OutOfStockException extends Exception {
     @Override
-    public String getMess(){
+    public String getMessage(){
         return "Товар закінчився.";
     }
 }
