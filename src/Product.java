@@ -10,7 +10,6 @@ public abstract class Product {
         if (quantity <= 0) {
             throw new OutOfStockException();
         }
-        System.out.println("Товар у наявності: " + quantity + " одиниць.");
     }
     public void reduceStock(){
         if(quantity>0){

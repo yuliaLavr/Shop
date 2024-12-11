@@ -1,6 +1,6 @@
 public class Animal extends Product implements Sale {
-    private int age;
-    private double price;
+    private final int age;
+    private final double price;
 
     public Animal(String name, int age, double price, int quantity) {
         super(name,quantity);

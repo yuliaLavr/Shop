@@ -1,6 +1,6 @@
 public class Accessory extends Product implements Sale{
-    private String type;
-    private double price;
+    private final String type;
+    private final double price;
 
     public Accessory(String name, String type, double price, int quantity) {
         super(name,quantity);
